@@ -1,4 +1,4 @@
-document.getElementById('searchInput').addEventListener('input', function() {
+/*document.getElementById('searchInput').addEventListener('input', function() {
     // Lấy giá trị nhập vào từ ô tìm kiếm
     let searchValue = this.value.toLowerCase();
 
@@ -16,4 +16,27 @@ document.getElementById('searchInput').addEventListener('input', function() {
             div.style.display = "none";
         }
     });
+});*/   
+
+document.getElementById('searchInput').addEventListener('input', function() {
+    // Lấy giá trị nhập vào từ ô tìm kiếm
+    let searchValue = this.value.toLowerCase();
+
+    // Lấy tất cả các thẻ h2 trong trang
+    let headings = document.querySelectorAll('h2');
+
+    headings.forEach(function(h2) {
+        // Lấy nội dung của thẻ h2
+        let text = h2.textContent.toLowerCase();
+
+        // Kiểm tra nếu nội dung thẻ h2 chứa giá trị tìm kiếm
+        if (text.includes(searchValue)) {
+            // Hiển thị thẻ div chứa thẻ h2 này
+            h2.parentElement.style.display = "";
+        } else {
+            // Ẩn thẻ div chứa thẻ h2 này
+            h2.parentElement.style.display = "none";
+        }
+    });
 });
+

@@ -10,3 +10,21 @@ h1{
 div{
     text-align: center;
 }
+#keo{
+    width: 640px;
+    height: 400px;
+    text-align: center;
+}
+#text{
+    width: 640px;
+    height: 360px;
+}
+
+#searchInput {
+    width: 300px; /* Hoặc bạn có thể đặt một giá trị cụ thể như 300px */
+    padding: 15px; /* Tăng kích thước padding để ô lớn hơn */
+    font-size: 18px; /* Tăng kích thước font */
+    border-radius: 5px; /* Tạo góc bo tròn nếu muốn */
+    border: 2px solid #ccc; /* Đường viền xung quanh ô */
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước tổng thể của ô */
+}
