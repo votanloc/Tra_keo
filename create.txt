@@ -1,0 +1,2 @@
+tạo 1 trang web với các chức năng sau
+lấy danh sách foder từ link 'https://drive.google.com/drive/folders/1HTOkmy0mjD7Ox8XNSevrCT4Psp48vRUJ?usp=drive_link'
