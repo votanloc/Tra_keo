@@ -40,3 +40,33 @@ document.getElementById('searchInput').addEventListener('input', function() {
     });
 });
 
+document.getElementById('caculatorInput').addEventListener('input', function() {
+    let number = parseInt(this.value);
+    let multiplicationResultDiv = document.getElementById('multiplicationResult');
+    let divisionResultDiv = document.getElementById('divisionResult');
+
+    // Xóa nội dung cũ
+    multiplicationResultDiv.innerHTML = '';
+    divisionResultDiv.innerHTML = '';
+
+    if (!isNaN(number)) {
+        // Tạo bảng nhân
+        let multiplicationHTML = `<h3>Bảng nhân ${number}</h3>`;
+        for (let i = 1; i <= 10; i++) {
+            multiplicationHTML += `<p>${number} x ${i} = ${number * i}</p>`;
+        }
+        multiplicationResultDiv.innerHTML = multiplicationHTML;
+
+        // Tạo bảng chia
+        let divisionHTML = `<h3>Bảng chia ${number}</h3>`;
+        for (let i = 1; i <= 10; i++) {
+            divisionHTML += `<p>${number * i} / ${number} = ${i}</p>`;
+        }
+        divisionResultDiv.innerHTML = divisionHTML;
+    } else {
+        multiplicationResultDiv.innerHTML = '<p>Vui lòng nhập một số hợp lệ.</p>';
+        divisionResultDiv.innerHTML = '<p>Vui lòng nhập một số hợp lệ.</p>';
+    }
+});
+
+

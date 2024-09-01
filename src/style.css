@@ -8,7 +8,8 @@ h1{
     text-align: center;
 }
 div{
-    text-align: center;
+    text-align: center;/*đường phân cách giữa keo*/
+    
 }
 #keo{
     width: 640px;
@@ -21,10 +22,38 @@ div{
 }
 
 #searchInput {
-    width: 300px; /* Hoặc bạn có thể đặt một giá trị cụ thể như 300px */
-    padding: 15px; /* Tăng kích thước padding để ô lớn hơn */
-    font-size: 18px; /* Tăng kích thước font */
-    border-radius: 5px; /* Tạo góc bo tròn nếu muốn */
-    border: 2px solid #ccc; /* Đường viền xung quanh ô */
-    box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước tổng thể của ô */
+    width: 300px;
+    padding: 15px; 
+    font-size: 18px; 
+    border-radius: 5px; 
+    border: 2px solid #ccc; 
+    box-sizing: border-box; 
+}
+#caculatorInput {
+    width: 300px;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+}
+
+.maytinh {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left, .right {
+    width: 48%;
+}
+
+#caculatorInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    text-align: center;
 }
